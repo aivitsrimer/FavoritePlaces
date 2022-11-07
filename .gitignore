@@ -55,10 +55,10 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+*.xcworkspace
 
 # Carthage
 #
@@ -89,3 +89,20 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Binaries
+*.dylib
+*.a
+*.o
+*.d
+*.libdeps
+*.zip
+*.realm
+!examples/ios/swift/Migration/RealmTemplates/*.realm
+!examples/ios/objc/Migration/RealmTemplates/*.realm
+*.realm.lock
+
+# core
+core
+core-*
+realm-core-*-xcframework
